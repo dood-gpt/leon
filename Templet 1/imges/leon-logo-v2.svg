@@ -1,0 +1,64 @@
+<svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="mainGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2b9cf8;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0077ff;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#005e63;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#004d50;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Main circle background -->
+  <circle cx="150" cy="150" r="145" fill="none" stroke="url(#mainGrad)" stroke-width="3"/>
+  
+  <!-- Inner decorative circle -->
+  <circle cx="150" cy="150" r="130" fill="none" stroke="url(#accentGrad)" stroke-width="2" opacity="0.5"/>
+  
+  <!-- Letter L -->
+  <g>
+    <!-- Vertical bar -->
+    <rect x="70" y="80" width="18" height="140" rx="9" fill="url(#mainGrad)"/>
+    <!-- Horizontal bar -->
+    <rect x="70" y="200" width="95" height="18" rx="9" fill="url(#mainGrad)"/>
+    <!-- Corner accent -->
+    <circle cx="88" cy="209" r="6" fill="url(#accentGrad)"/>
+  </g>
+  
+  <!-- Letter E -->
+  <g transform="translate(185, 0)">
+    <!-- Vertical bar -->
+    <rect x="0" y="80" width="18" height="140" rx="9" fill="url(#accentGrad)"/>
+    <!-- Top bar -->
+    <rect x="0" y="80" width="70" height="18" rx="9" fill="url(#accentGrad)"/>
+    <!-- Middle bar -->
+    <rect x="0" y="140" width="60" height="18" rx="9" fill="url(#accentGrad)"/>
+    <!-- Bottom bar -->
+    <rect x="0" y="200" width="70" height="18" rx="9" fill="url(#accentGrad)"/>
+  </g>
+  
+  <!-- Letter O -->
+  <g transform="translate(95, 95)">
+    <circle cx="0" cy="0" r="32" fill="none" stroke="url(#mainGrad)" stroke-width="14"/>
+  </g>
+  
+  <!-- Letter N -->
+  <g transform="translate(215, 80)">
+    <!-- Left vertical -->
+    <rect x="0" y="0" width="14" height="140" rx="7" fill="url(#accentGrad)"/>
+    <!-- Right vertical -->
+    <rect x="52" y="0" width="14" height="140" rx="7" fill="url(#accentGrad)"/>
+    <!-- Diagonal -->
+    <line x1="7" y1="130" x2="59" y2="10" stroke="url(#mainGrad)" stroke-width="14" stroke-linecap="round"/>
+  </g>
+  
+  <!-- Text below -->
+  <text x="150" y="260" font-family="'Work Sans', Arial, sans-serif" font-size="42" font-weight="700" text-anchor="middle" fill="url(#mainGrad)" letter-spacing="8">LEON</text>
+  
+  <!-- Small decorative dots -->
+  <circle cx="140" cy="35" r="4" fill="url(#accentGrad)"/>
+  <circle cx="160" cy="30" r="4" fill="url(#mainGrad)"/>
+  <circle cx="145" cy="268" r="3" fill="url(#accentGrad)"/>
+  <circle cx="155" cy="270" r="3" fill="url(#mainGrad)"/>
+</svg>

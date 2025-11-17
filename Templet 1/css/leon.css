@@ -1,0 +1,134 @@
+/* start varibles */
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+} 
+/* end varibles */
+
+body{
+    font-family: "worksans", sans-serif;}
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;  
+    margin-right: auto; 
+}
+
+@media (max-width: 768px){
+    .container{
+        width: 100%;
+        padding: 0 10px;
+    }
+}
+@media (min-width: 769px){
+    .container{
+        width: 85%;
+    }
+}
+@media (min-width: 1200px){
+    .container{
+        width: 80%;
+    }
+}
+
+ header{
+    padding: 20px;
+    background-color: #e8f8ff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.header .logo {
+    width: 100px;
+}
+.header .links {
+    position: relative;
+}
+.header .links:hover .icons span:nth-child(2) {
+    width: 100%;
+}
+
+.header .links .icons {
+    width: 30px;
+    display: flex;
+    flex-wrap: wrap;
+     justify-content: flex-end;
+}
+.header .links .icons span {
+    background-color: black;    
+    margin-bottom: 5px;
+    height: 2px;
+}
+.header .links .icons span:first-child {
+height: 3px;
+width: 100%;
+}
+.header .links .icons span:nth-child(2) {
+height: 3px;
+width: 60%;
+transition: 0.3s;
+}
+.header .links .icons span:last-child {
+height: 3px;
+width: 100%;
+}
+.header .links ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(43, 156, 248, 0.205);
+    position: absolute;
+    right: 0;
+    min-width: 200px;
+    top: calc(100% + 10px);
+    box-shadow: 2px 2px 4px rgba(0, 119, 255, 0.1);
+    display: none;
+    border-radius: 5px;
+    z-index: 1000;
+    
+}
+
+
+
+.header .links ul ::before {
+content: "";
+border-width: 10px;
+border-style: solid;
+border-color: transparent transparent rgb(4, 35, 58) transparent;
+position: absolute;
+right: 5px;
+top: -20px;
+}
+
+.header .links:hover ul {
+    display: block;
+}
+
+.header .links ul li a{
+    display: block;
+    padding: 10px 15px;
+    border-bottom: 1px solid #eee;
+    text-decoration: none;
+    color: black;
+    transition: 0.3s;
+
+}
+.header .links ul li a:hover {
+    padding-left: 25px;
+    background-color: #005e63;
+    color: white;
+
+}
+/* landing section */
+.landing {
+    background-image: url(../imges/mountan.png);
+    background-size: cover;
+
+}
+    
